@@ -17,16 +17,17 @@ Getting Started
 
 1.  **Clone the template Repository:**
 
-    git clone https://github.com/HyperSonic-Games/Vortex-Template.git
-    cd Vortex-Template
+    ```
+    git clone https://github.com/HyperSonic-Games/Vortex-Template.git && cd Vortex-Template
+    ```
     
 
-2.  **Install Dependencies:**
+3.  **Install Dependencies:**
 
     pip install -r engine-requirements.txt
     
 
-3.  **Build the game of your dreams**
+4.  **Build the game of your dreams**
     
 
 Contributing
