@@ -6,20 +6,21 @@ import numpy as np
 from numba import njit, prange
 from scipy.spatial.transform import Rotation as R
 from ..internal.ECS import Entity, PositionComponent, VelocityComponent
+from typing import List
 
 # Constants
 Gravity = 9.81
 TimeStep = 0.01
 
 @njit(parallel=True)
-def UpdatePositions(entities, numEntities):
+def UpdatePositions(entities, numEntities: int):
     """
     Update the positions and velocities of entities based on physics.
     
     :param entities: A 2D numpy array where each row contains position and velocity vectors.
     :param numEntities: Number of entities in the simulation.
     """
-    for i in prange(numEntities):
+    for i in prange(numEntities: int):
         position = entities[i][0]
         velocity = entities[i][1]
         position[0] += velocity[0] * TimeStep
