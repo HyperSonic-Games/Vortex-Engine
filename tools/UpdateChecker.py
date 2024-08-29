@@ -63,11 +63,12 @@ def Main():
     latestReleaseUrl = GetLatestReleaseInfo(repoUrl)
     
     # Paths
-    tempZipPath = "update.zip"
-    extractToDir = "update"
+    tempZipPath = "update.zip" # change to what you want the zip file called
+    extractToDir = "update" # change to what you want the extracted update dir to be called
     
     # Define GUI layout
     layout = [
+        [sg.Image("../engine/internal/Logo.png")],
         [sg.Text('Checking for updates...', size=(30, 1), key='-MESSAGE-')],
         [sg.ProgressBar(100, orientation='h', size=(30, 20), key='-PROGRESS-')],
         [sg.Button('Exit')]

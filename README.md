@@ -15,19 +15,20 @@ Key Features
 Getting Started
 ---------------
 
-1.  **Clone the template Repository:**
+1.  **Clone the Repository:**
 
     ```
-    git clone https://github.com/HyperSonic-Games/Vortex-Template.git && cd Vortex-Template
+    git clone https://github.com/HyperSonic-Games/Vortex-Engine.git && cd Vortex-Engine
     ```
     
 
 3.  **Install Dependencies:**
 
     pip install -r engine-requirements.txt
-    
 
-4.  **Build the game of your dreams**
+4. 
+
+5.  **Build the game of your dreams**
     
 
 Contributing
